@@ -1,0 +1,16 @@
+    <div class="features section">
+        <div class="features-content section-content row">
+            {% for item in page.header.featureslist %}
+            <div class="feature feature-2 flex col-sm-4">
+                <div class="feature-img">
+                    <img class="{{ item.image_class }}" src="{{ item.image }}" alt="ikona atuty">
+                </div>
+                <div class="feature-content">
+                    <h6>{{ item.title }}</h6>
+                    <p>{{ item.content }}</p>
+                    <p class="link link-services">{{ item.link }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>

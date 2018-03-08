@@ -1,0 +1,15 @@
+email: sebastian.anonim97@gmail.com
+fullname: 'Sebastian Anonim'
+title: Administrator
+state: enabled
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+  site:
+    login: 'true'
+hashed_password: $2y$10$6UWqlwKswnfkfbJoaPetp.4hmRIZZZTChb4d1b4VXwashgeqPbcc.
+authorized: true
+twofa_secret: H5SDO7DMRH7KWP37HZM2HNJ36HBHTRDK
+language: en
+twofa_enabled: false

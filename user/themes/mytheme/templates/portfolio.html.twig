@@ -1,0 +1,65 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+{% block content %}
+    
+    
+    
+    <div class="wallpaper wallpaper-portfolio flex" id="home">
+        <div class="wallpaper-content section-content">
+           {% if grav.language.getActive == 'en' %}
+            <h1>Some of my projects</h1>
+                        
+            {% else %}
+            <h1>Moje projekty</h1>
+            
+            {% endif %}
+        </div>
+    </div>
+
+
+
+
+    <div class="categories container">
+        <div class="categories-content">
+            <ul>
+               {% if grav.language.getActive == 'pl' %}
+            <li class="category__change active" data-type="all">Wszystko</li>
+                <li class="category__change" data-type="website">Strony internetowe</li>
+<!--                <li class="category__change" data-type="psd">PSD To HTML</li>-->
+                <li class="category__change" data-type="auction">Szablony aukcji</li>
+            {% else %}
+            <li class="category__change active" data-type="all">All</li>
+                <li class="category__change" data-type="website">Website</li>
+<!--                <li class="category__change" data-type="psd">PSD To HTML</li>-->
+                <li class="category__change" data-type="auction">Auction Template</li>
+            {% endif %}
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="container portfolio-container">
+
+
+    </div>
+
+
+
+    <div class="container ajax-button-container">
+               {% if grav.language.getActive == 'en' %}
+        <div class="button button-black button-long ajax-button" onclick="displayProjects('all')">Load more</div>
+            {% else %}
+        <div class="button button-black button-long ajax-button" onclick="displayProjects('all')">Więcej projektów</div>
+            {% endif %}
+    </div>
+    
+    {% for module in page.collection() %}
+                {{ module.content }}
+        {% endfor %}
+    
+{% endblock %}

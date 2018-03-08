@@ -1,0 +1,27 @@
+.wallpaper:before{
+        background-color: rgba(33, 34, 56, 0.8);
+}
+.wallpaper:before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.wallpaper{
+    height: 500px;
+    background-size: 100% 100%;
+    color:white;
+    position: absolute;
+    background-image: url(../img/bike.png);
+    width: 100%
+}
+.under-wallpaper{
+    position: absolute;
+    width: 100%;
+    background-color: #eee;
+    top:500px;
+    z-index:-1;
+    margin-bottom: 20px;
+}

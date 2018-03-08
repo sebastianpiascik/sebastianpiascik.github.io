@@ -1,0 +1,287 @@
+.portfolio{
+    margin-top: 35px;
+}
+.portfolio p{
+    color:#aaa;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.portfolio-img-left{
+    float: left;
+    width: 57%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 1;
+}
+.portfolio-img-right{
+    width: 41.9%;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    left:0px;
+    opacity: 1;
+}
+.portfolio-img-left img{
+    transition: .3s ease-in-out; 
+    display: block;
+    width: 100%
+}
+
+.portfolio-img-left:hover img{
+    -webkit-transform: scale(1.2) rotate(2deg);
+	transform: scale(1.2) rotate(2deg);
+}
+.portfolio-img-right img{
+    transition: .3s ease-in-out; 
+    position: relative;
+    display: block;
+}
+.portfolio-img-right-up, .portfolio-img-right-down{
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-img-right-down{
+    margin-top: 2.75%
+}
+.portfolio-img-right-up:hover img{
+    -webkit-transform: scale(1.2) rotate(2deg);
+	transform: scale(1.2) rotate(2deg);
+}
+.portfolio-img-right-down:hover img{
+    -webkit-transform: scale(1.2) rotate(2deg);
+	transform: scale(1.2) rotate(2deg);
+}
+
+.card-1{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.3s ease-in;
+}
+.card-1-description{
+    margin: 0 auto;
+    margin-top:39%;
+    width: 80%;
+    color:#eee;
+    visibility: hidden;
+    transition-delay: 0.15s
+}
+.card-1-description-line{
+    height: 2px;
+    background-color: #7da7d1;
+    width: 0%;
+    margin-left: 50%;
+    transition: 0.3s cubic-bezier(0, 0, .67, .17);
+    transition-delay: 0.30s
+}
+.card-1-description h4{
+    padding: 0px;
+    font-weight: 600;
+    font-size: 29px;
+    color:white;
+}
+.card-1-description h6{
+    padding: 0px;
+    color:#7da7d1;
+    font-weight: 700
+}
+.button-container div{
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 3px;
+    color: #ddd;
+    border: 1px solid #ddd;
+    transition: 0.3s linear;
+    margin-top:10px
+}
+.button-container div:hover{
+    color:white;
+    background-color: #969696;
+}
+.demo{
+    margin-left: 2%;
+}
+.portfolio-img-left:hover .card-1{
+    top:0;
+    height: 100%;
+}
+.portfolio-img-left:hover .card-1-description-line{
+    margin-left: 30%;
+    width: 40%;
+}
+.portfolio-img-left:hover .card-1-description{
+    visibility: visible
+}
+.portfolio-img-right-up:hover .card-1{
+    top:0;
+    height: 100%;
+}
+.portfolio-img-right-up:hover .card-1-description-line{
+    margin-left: 30%;
+    width: 40%;
+}
+.portfolio-img-right-up:hover .card-1-description{
+    visibility: visible;
+    margin-top:25%;
+}
+.portfolio-img-right-down:hover .card-1{
+    top:0;
+    height: 100%;
+}
+.portfolio-img-right-down:hover .card-1-description-line{
+    margin-left: 30%;
+    width: 40%;
+}
+.portfolio-img-right-down:hover .card-1-description{
+    visibility: visible;
+    margin-top:25%;
+}
+/* Koniec portfolio */
+.education{
+    padding:10px 50px;
+    color:#444;
+    position: relative;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 2px 2px #ddd;
+}
+.services{
+    padding:10px 50px;
+    color:#444;
+    position: relative;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 2px 2px #ddd;
+}
+.service{
+    display: inline-block;
+    width: 31%;
+    text-align: left;
+    padding: 10px;
+    color:#666;
+    margin-right: 1%;
+    min-width: 170px;
+    position: relative;
+    box-sizing:padding-box;
+    top:50px;
+    opacity: 0;
+}
+.service img{
+    width: 69px;
+}
+.service h3{
+    padding-bottom: 15px;
+    margin-top: 25px;
+}
+.service p{
+    padding: 25px 0px;
+    color:#333;
+}
+.service-line{
+    width: 50%;
+    border-bottom: 3px solid #7da7d1
+}
+.hobby{
+    padding:10px 50px;
+    color:#444;
+    position: relative;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 2px 2px #ddd;
+    padding-bottom: 20px;
+}
+.hobby p{
+    color:#555;
+    padding: 10px;
+}
+.hobby-container{
+    margin-top: 25px;
+}
+.hobby-element{
+    width: 55px;
+    height: 55px;
+    box-shadow: 0.2px 0.2px 0.8px 0.8px #ddd;
+    display: inline-block;
+    margin-right: 1%;
+    cursor: pointer;
+    position: relative;
+}
+.hobby-element:first-child{
+    background-image: url(../img/hobby/ping-pong.png);
+    background-size: 100% 100%;
+}
+.hobby-element:nth-child(2){
+    background-image: url(../img/hobby/airplane-shape.png);
+    background-size: 100% 100%;
+}
+.hobby-element:nth-child(3){
+    background-image: url(../img/hobby/circular-auriculars.png);
+    background-size: 100% 100%;
+}
+.hobby-element:nth-child(4){
+    background-image: url(../img/hobby/film-strip.png);
+    background-size: 100% 100%;
+}
+.hobby-element:nth-child(5){
+    background-image: url(../img/hobby/gamepad.png);
+    background-size: 100% 100%;
+}
+.hobby-element:nth-child(6){
+    background-image: url(../img/hobby/man-cycling.png);
+    background-size: 100% 100%;
+}
+.hobby-element:nth-child(7){
+    background-image: url(../img/hobby/man-working-on-a-laptop-from-side-view.png);
+    background-size: 100% 100%;
+    
+}
+.tooltiptext {
+    width: 55px;
+    color: #7da7d1;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.6s;
+    left:0;
+    font-size:11px;
+    top:60px;
+    box-shadow: 0.5px 0.5px 0.8px 0.8px #ddd;
+    visibility: hidden;
+    opacity: 0;
+}
+.lasttooltip{
+    width:70px;
+    left:-7.5px
+}
+
+.hobby-element:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width:590px){
+    .service{
+        width: 95%;
+        min-width: 0;
+        text-align: center;
+    }
+    .service-line{
+        width: 100%;
+    }
+    .hobby-element{
+        margin-top: 10px
+    }
+    .portfolio-img-left, .portfolio-img-right{
+        width: 100%;
+    }
+    .portfolio-img-right{
+        margin: 0;
+    }
+    .portfolio-img-right-down{
+        margin-top:0;
+    }
+}
+

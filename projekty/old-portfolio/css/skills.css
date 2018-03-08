@@ -1,0 +1,117 @@
+.about h1{
+    color:#444;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 40px;
+    text-align: center;
+    font-family: 'open-sans',sans-serif;
+}
+.skills{
+    background-color: white;
+    box-shadow: 0.5px 0.5px 2px 2px #ddd;
+    padding-bottom: 20px;
+}
+.circle-box{
+    display: inline-block;
+    padding: 30px 50px;
+}
+.circle-box h5{
+    color:#444;
+    margin-top: 30px;
+    width: 130px
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: #d9e6f2;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.sq1 {
+    width: 100px;
+    height: 0px;
+    position: absolute;
+    left: 50px;
+    background-color: #7da7d1;
+}
+    
+.sq2{
+    width: 50px;
+    height: 0px;
+    position: absolute;
+    top: 100px;
+    background-color:#7da7d1;
+}
+.sq3{
+    width: 50px;
+    height: 0px;
+    top:51px;
+    position: absolute;
+    background-color:#7da7d1;
+    transform-origin: bottom;
+    transform: skewX(72deg);
+}
+.skew72{
+    transform: skewX(72deg);
+}
+  
+.inner{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color:white;
+    overflow: hidden;
+}
+.inner h4{
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #6A7152;
+    font-weight: 300;
+}
+
+/*=======2 circle============*/ 
+.sq2-2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 80px;
+    left:40px;
+    transform: skewX(40deg);
+    background-color: #d9e6f2;
+}
+.sq3-2, .sq3-3, .sq3-4{
+    width: 50px;
+    height: 50px;
+    transform-origin: bottom;
+    transform: skewX(72deg);
+    display: none;
+}
+.sq2-3{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 80px;
+    left:40px;
+    transform: skewX(40deg);
+    background-color: #d9e6f2;
+}
+.sq2-4{
+    width: 100px;
+    height: 0px;
+    position: absolute;
+    top: 100px;
+    transform: skewX(-65deg);
+    display: none;
+}
+@media screen and (max-width:900px){
+    .circle-box{
+        padding: 20px 10px
+    }
+}
