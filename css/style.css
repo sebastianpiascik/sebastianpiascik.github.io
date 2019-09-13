@@ -26,7 +26,7 @@ a:link {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.1px;
     font-size: 66px;
     line-height: 63px;
@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.1px;
     font-size: 42px;
     line-height: 51px;
@@ -301,7 +301,7 @@ p.link {
 .nav .nav-content .nav-ul ul li a {
     color: #666;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     padding-left: 30px;
     transition: 0.3s;
     font-size: 13px;
