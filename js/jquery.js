@@ -124,7 +124,7 @@ $(document).ready(function () {
             console.log('x');
             $('.hamburger').find('.hamburger-content').toggleClass('hamburger-clicked');
             $('.nav-content').fadeToggle();
-//            $('.nav-content').css('display', 'flex');
+            //            $('.nav-content').css('display', 'flex');
         }
     }
     if ($(window).width() > 1050) {
